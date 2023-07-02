@@ -1,6 +1,6 @@
 #Run on All nodes
 
-#NTP Configuration --
+#NTP Configuration -- Update NTP address according to your infra 
 
 sed 's/^pool/#&/' -i /etc/chrony.conf
 echo -e "pool 172.90.0.30  iburst \nallow 172.90.0.0/24 " >> /etc/chrony.conf
